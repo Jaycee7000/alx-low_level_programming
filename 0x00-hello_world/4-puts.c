@@ -1,11 +1,8 @@
-#include <stdio.h>                                                                                                              
-                                                                                                                            
-/**                                                                                                                             
-
+#include <stdio.h>                                                                                                              /**                                                                                                                          
 * main - Print                                                                                                                  
 *                                                                                                                               
 *Description: using the main function
-*Return: Always 0 (success)                                                                                                                      
+*Return: 0                                                                                                                      
 
 */                                                                                                                              
 
