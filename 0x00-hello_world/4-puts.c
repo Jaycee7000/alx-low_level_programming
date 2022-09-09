@@ -1,13 +1,11 @@
 #include <stdio.h>                                                                                                              
-
                                                                                                                             
-
 /**                                                                                                                             
 
 * main - Print                                                                                                                  
 *                                                                                                                               
 *Description: using the main function
-*Return: 0                                                                                                                      
+*Return: Always 0 (success)                                                                                                                      
 
 */                                                                                                                              
 
