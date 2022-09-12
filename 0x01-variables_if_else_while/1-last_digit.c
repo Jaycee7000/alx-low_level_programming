@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - Complete the source code in order to print 
- * the last digit of the number stored in the variabl
- * 
+ * main - Complete the source code in order to print
+ * the last digit of the number stored in the variable
+ *
  * Return: Always (Successful)
  */
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%s %d is %d and is" , last, n, n % 10);
+	printf("%s %d is %d and is", last, n, n % 10);
 
 	if (n % 10 > 5)
 	{
