@@ -13,7 +13,7 @@ int main(void)
 	int f_d;
 	int l_d;
 
-	while (c <= 99)
+	while (i <= 99)
 	{
 		f_d = (i / 10 + '0');
 		l_d = (i % 10 + '0');
