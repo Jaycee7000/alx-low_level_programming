@@ -9,11 +9,11 @@
  */
 int main(void)
 {
-	char alp;
+	char c;
 
-	for (alp = 'a'; alp <= 'z'; alp++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(alp);
+		putchar(c);
 		printf("\n");
 	}
 	return (0);
