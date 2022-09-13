@@ -24,7 +24,7 @@ int main(void)
 			putchar(f_d);
 			putchar(m_d);
 			putchar(l_d);
-			if (i != 789)
+			if (i != 98)
 			{
 				putchar(',');
 				putchar(' ');
