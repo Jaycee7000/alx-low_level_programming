@@ -13,6 +13,7 @@ int main(void)
 
 	for (alp = 'a'; alp <= 'z'; alp++)
 		putchar(alp);
-		printf("\n");
+		putchar("\n");
+
 	return (0);
 }
