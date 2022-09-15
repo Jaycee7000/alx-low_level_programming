@@ -3,8 +3,8 @@
 
 /**
  * main - header file for prototypes
- * void protoypes (void)
- * int protoypes (int)
+ * void prototypes (void)
+ * int prototypes (int)
  */
 
 void print_numbers (void);
