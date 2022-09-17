@@ -15,7 +15,7 @@ int main(void)
 			printf("FizzBuzz");
 		else if (h % 5 == 0)
 		{
-			if (h == 100)
+			if (h != 100)
 			{
 				printf("Buzz");
 				printf("\n");
