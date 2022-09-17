@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (number % inc == 0)
 		{
-			number / = 2;
+			number /= 2;
 			continue;
 		}
 		for (inc = 3; inc < number / 2; inc += 2)
