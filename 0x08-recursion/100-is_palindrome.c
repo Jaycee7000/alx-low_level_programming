@@ -51,4 +51,4 @@ void check(char *s, int start, int end, int *flag)
 			*flag *= 0;
 		check(s, start + 1, end - 1, flag);
 	}
-
+}
