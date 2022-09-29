@@ -16,22 +16,22 @@ int _sqrt_recursion(int n)
 
 /**
  * squareFunction - returns the square root of a number
- * @n: test number
+ * @num: test number
  * @x: squared number
  * Return: sqrt of number to -1 for error
  */
 
-int squareFunction(int n, int x)
+int squareFunction(int num, int x)
 {
-	if ((x * x) == n)
+	if ((x * x) == num)
 	{
 		return (x);
 	}
 	else
 	{
-		if ((x * x) > n)
+		if ((x * x) > num)
 			return (-1);
 		else
-			return (squareFunction(n, x + 1));
+			return (squareFunction(num, x + 1));
 	}
 }
