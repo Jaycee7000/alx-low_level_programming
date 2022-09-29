@@ -8,23 +8,30 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 1 || n == 0)
-		return (n);
-	return (_sqrt(0, n));
+	if (n < 0)
+		return (-1);
+	else
+		return (squareFunction(n, 0));
 }
 
 /**
- * _sqrt - returns the square root of a number
+ * squareFunction - returns the square root of a number
  * @n: test number
  * @x: squared number
  * Return: the square root of n
  */
 
-int _sqrt(int n, int x)
+int squareFunction(int n, int x)
 {
-	if (n > x / 2)
-		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	if ((x * x) == n)
+	{
+		return (x);
+	}
+	else
+	{
+		if ((x * x) > n)
+			return (-1);
+		else
+			return (squareFunction(n, x + 1));
+	}
 }
