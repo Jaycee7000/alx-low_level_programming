@@ -1,20 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: number to be used
- * Return: the square root of n
- */
-
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	else
-		return (squareFunction(n, 0));
-}
-
-/**
  * squareFunction - returns the square root of a number
  * @num: test number
  * @x: squared number
@@ -34,4 +20,18 @@ int squareFunction(int num, int x)
 		else
 			return (squareFunction(num, x + 1));
 	}
+}
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to be used
+ * Return: the square root of n
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	else
+		return (squareFunction(n, 0));
 }
