@@ -27,7 +27,7 @@ int primeFunction(int num, int start)
 }
 
 /**
- * _is_prime_number - returns the 1 if n is prime otherwise 0
+ * is_prime_number - returns the 1 if n is prime otherwise 0
  * @n: number to be checked
  * Return: 1 if n is prime, 0 otherwise
  */
