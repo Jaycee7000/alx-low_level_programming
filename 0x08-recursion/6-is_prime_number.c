@@ -22,7 +22,7 @@ int primeFunction(int num, int start)
 	}
 	else
 	{
-		return (start);
+		return (1);
 	}
 }
 
