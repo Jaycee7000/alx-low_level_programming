@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
  * squareFunction - returns the square root of a number
  * @n: test number
  * @x: squared number
- * Return: the square root of n
+ * Return: sqrt of number to -1 for error
  */
 
 int squareFunction(int n, int x)
