@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 #include "main.h"
 
 /**
@@ -39,4 +36,3 @@ char *str_concat(char *s1, char *s2)
 
 	return (concat_str);
 }
->>>>>>> 830cde71f9be8f4921346b8516fba92f91d62aed
