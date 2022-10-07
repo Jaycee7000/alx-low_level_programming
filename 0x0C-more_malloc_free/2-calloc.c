@@ -1,6 +1,32 @@
-feherhfbhf h5f 5jl53bj35bfkj3f kf5 3fj3
-rjbfjk3b4jf43 bf 34nmf43 n j fj4 ff jf 
-f4jbfb4jbj4bnfb4fjbf4h43h v4g3 gf
-flj4fbj3 4fh34 f34flkb34j f43k f34 
-f4j3 b4fj3 fkf 4h 43kfj4lkf43f34
-4fj3fbj3bfj3
+#include "main.h"
+#include <stdlib.h>
+/**
+ * _calloc - Allocates memory for an array of a certain number
+ * of elements each of an inputted byte size.
+ * @nmemb: The number of elements.
+ * @size: The byte size of each array element.
+ *
+ * Return: If nmemb = 0, size = 0, or the function fails - NULL.
+ * Otherwise - a pointer to the allocated memory.
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *mem;
+	char *filler;
+	unsigned int index;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	mem = malloc(size * nmemb);
+
+	if (mem == NULL)
+		return (NULL);
+
+	filler = mem;
+
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
+}
