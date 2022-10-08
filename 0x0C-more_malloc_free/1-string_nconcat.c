@@ -3,41 +3,40 @@
 
 /**
  * string_nconcat - concatenates two strings.
- * @s1: the first string.
- * @s2: the second string.
- * @n: the maximum number of bytes of s2 to concatenate to s1.
+ * @s1: first string to copy
+ * @s2: second string to copy
+ * @n: number of bytes of s2 to copy
  *
- * Return: if the function fails - NULL.
- * otherwise - a pointer to the concatenated space in memory.
+ * Return: char pointer to newly allocated place in memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *con;
-	unsigned int len = n, index;
+	unsigned int i, j, k;
+	char *s;
 
 	if (s1 == NULL)
-		s1 = "";
-
+		i = 0;
+	else
+	{
+		for (i = 0; s1[i]; i++)
+			;
+	}
 	if (s2 == NULL)
-		s2 = "";
-
-	for (index = 0; s1[index]; index++)
-		len++;
-
-	con = mallaoc(sizeof(char) * (len + 1));
-
-	if (con == NULL)
+		j = 0;
+	else
+	{
+		for (j = 0; s2[j]; j++)
+			;
+	}
+	if (j > n)
+		j = n;
+	s = malloc(sizeof(char) * (i + j + 1));
+	if (s == NULL)
 		return (NULL);
-	len = 0;
-
-	for (index = 0; s1[index]; index++)
-		con[len++] = s1[index];
-
-	for (index = 0; s2[index] && index < n; index++)
-		con[len++] = s2[index];
-
-	con[len] = '\0';
-
-	return (con);
+	for (k = 0; k < i; k++)
+		s[k] = s1[k];
+	for (k = 0; k < j; k++)
+		s[k + i] = s2[k];
+	s[i + j] = '\0';
+	return (s);
 }
