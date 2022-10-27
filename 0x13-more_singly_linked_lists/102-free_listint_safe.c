@@ -44,8 +44,12 @@ size_t looped_listint_count(listint_t *head)
 			return (nodes);
 		}
 
-		return (0);
+		chelsea = chelsea->next;
+		barc = (barc->next)->next;
 	}
+
+		return (0);
+}
 
 /**
  * free_listint_safe - Frees a listint_t list safely (i.e
