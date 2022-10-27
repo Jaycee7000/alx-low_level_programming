@@ -2,41 +2,40 @@
 
 /**
  * find_listint_loop - Finds the loop contained in
- * a listint_t linked list.
+ *                     a listint_t linked list.
  * @head: A pointer to the head of the listint_t list.
  *
- * Return: 0
- * Otherwise - the address of the node where the loop starts.
+ * Return: If there is no loop - NULL.
+ *         Otherwise - the address of the node where the loop starts.
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *chelsea, *manu;
+	listint_t *tortoise, *hare;
 
 	if (head == NULL || head->next == NULL)
 		return (NULL);
 
-	chelsea = head->next;
-	manu = (head->next)->next;
+	tortoise = head->next;
+	hare = (head->next)->next;
 
-	while (manu)
+	while (hare)
 	{
-		if (manu == chelsea)
+		if (tortoise == hare)
 		{
-			manu = head;
+			tortoise = head;
 
-			while (manu != chelsea)
+			while (tortoise != hare)
 			{
-				manu = manu->next;
-				chelsea = chelsea->next;
+				tortoise = tortoise->next;
+				hare = hare->next;
 			}
 
-			return (manu);
+			return (tortoise);
 		}
 
-		manu = manu->next;
-		chelsea = (chelsea->next)->next;
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
 	}
 
 	return (NULL);
 }
-
